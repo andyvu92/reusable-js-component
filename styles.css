@@ -1,0 +1,91 @@
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+li,
+p,
+u,
+ul {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Dialog */
+
+dialog-button,
+.dialog-modal button {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: 1px solid grey;
+  padding: 10px;
+  flex: 1;
+  display: inline-block;
+}
+
+.dialog-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-modal {
+  padding: 50px 100px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dialog-modal p {
+  margin-bottom: 30px;
+}
+
+.dialog-modal div {
+  display: flex;
+  width: 100%;
+}
+
+.dialog-modal button {
+  margin: 0 5px;
+}
+
+/* Dialog Events */
+
+.dialog-events {
+  margin-top: 10px;
+}
+
+.dialog-events li {
+  padding: 10px;
+}
